@@ -81,8 +81,7 @@ class Account extends Api
     /**
      * Delete a connected account.
      *
-     * @param  array  $parameters
-     * @return array
+     * @param string $accountId
      */
     public function delete($accountId)
     {
