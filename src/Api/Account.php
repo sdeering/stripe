@@ -77,4 +77,15 @@ class Account extends Api
     {
         return $this->_get('accounts', $parameters);
     }
+    
+    /**
+     * Delete a connected account.
+     *
+     * @param  array  $parameters
+     * @return array
+     */
+    public function delete($accountId)
+    {
+        return $this->_delete('accounts/{$accountId}');
+    }
 }
